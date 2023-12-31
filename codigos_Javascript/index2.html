@@ -39,6 +39,11 @@
             border-radius: 10px;
             cursor: pointer;
         }
+
+        video {
+            width: 100%; /* Define a largura do vídeo como 100% da largura do contêiner */
+            height: auto; /* Mantém a proporção original do vídeo */
+        }
     </style>
 </head>
 <body>
@@ -59,11 +64,17 @@
 
         // Adicionar um botão clicável
         var button = document.createElement("button");
-        button.innerHTML = "Não clique aqui!";
+        button.innerHTML = "Clique aqui para ver o vídeo!";
         button.onclick = function () {
-            alert("ADVENTISTA LOCALIZADO!");
+            var video = document.createElement("video");
+            video.src = "videoparapaginashrek.mp4"; // Substitua pelo caminho do seu vídeo
+            video.controls = true; // Adiciona controles de reprodução (play, pause, etc.)
+            video.style.width = "100%"; // Define a largura do vídeo
+            video.style.height = "auto"; // Mantém a proporção original do vídeo
+            container.appendChild(video);
+            button.style.display = "none"; // Oculta o botão após adicionar o vídeo
         };
-        button.style.fontSize = "20px";
+        button.style.fontSize = "18px";
         container.appendChild(button);
 
         document.body.appendChild(container);
