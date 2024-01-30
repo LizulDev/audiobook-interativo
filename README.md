@@ -9,4 +9,4 @@ Tem a função de:
 
 Imagens descritivas:
 
-[IMAGEM PRINCIPAL-AUDIOBOOK](./src/images/audiobook.png);
+![IMAGEM PRINCIPAL-AUDIOBOOK](./src/images/audiobook.png)
