@@ -63,4 +63,4 @@ function previousChapter(){
 
 playButton.addEventListener("click", playOrPause);
 forwardButton.addEventListener("click", nextChapter);
-backwardButton.addEventListener("click", previousChapter)
+backwardButton.addEventListener("click", previousChapter);
